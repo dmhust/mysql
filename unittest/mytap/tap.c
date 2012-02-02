@@ -184,7 +184,7 @@ static signal_entry install_signal[]= {
 int skip_big_tests= 1;
 
 void
-plan(int count)
+plan(int const count)
 {
   char *config= getenv("MYTAP_CONFIG");
   size_t i;
@@ -229,7 +229,7 @@ skip_all(char const *reason, ...)
 }
 
 void
-ok(int pass, char const *fmt, ...)
+ok(int const pass, char const *fmt, ...)
 {
   va_list ap;
   va_start(ap, fmt);
@@ -263,7 +263,7 @@ ok1(int const pass)
 }
 
 void
-skip(int how_many, char const *fmt, ...)
+skip(int how_many, char const * const fmt, ...)
 {
   char reason[80];
   if (fmt && *fmt)
