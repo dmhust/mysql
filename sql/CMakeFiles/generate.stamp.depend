@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+E:/Git/mysql-5.5.20/sql/CMakeLists.txt
+E:/Git/mysql-5.5.20/cmake/bison.cmake
+E:/Git/mysql-5.5.20/cmake/make_dist.cmake.in
+E:/Git/mysql-5.5.20/cmake/create_initial_db.cmake.in
